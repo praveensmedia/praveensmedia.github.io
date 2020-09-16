@@ -1,0 +1,1211 @@
+/*
+ * Rowling RTL Support
+ */
+
+/*-----------------------------------------------------------------------------------
+
+	0.	CSS Reset & Clearfix
+	1.	Document Setup
+	2.	Structure
+	3.	Top Navigation
+	4.	Search Container
+	5.	Header
+	6.	Navigation
+	7.	Content
+	8.	Post Formats
+	9.	Single Post
+	10.	Post Content
+	11.	Comments
+	12.	Respond
+	13.	Page & Page Templates
+	14.	Pagination
+	15.	Sidebar
+	16.	Credits
+	17.	Media Queries
+
+----------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	0.	CSS Reset
+/* -------------------------------------------------------------------------------- */
+
+
+h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
+	text-align: right;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	1.	Document setup
+/* -------------------------------------------------------------------------------- */
+
+
+body {
+	direction: rtl;
+  unicode-bidi: embed;
+}
+
+.fleft { float: right; }
+.fright { float: left; }
+
+
+/* Transitions --------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------------- */
+/*	2.	Structure
+/* -------------------------------------------------------------------------------- */
+
+
+.wrapper:after {
+	left: 0;
+	right: inherit;
+	border-left: transparent;
+	border-right: 1px solid #ddd;
+}
+
+.content {
+	width: 68%;
+	float: right;
+}
+
+.content:before {
+	content: "";
+	background: #fff;
+	position: absolute;
+	z-index: -9999;
+	top: 0;
+	right: -10000px;
+	bottom: 0;
+	left: 28.5%;
+}
+
+.sidebar {
+	width: 28.5%;
+	float: left;
+	padding: 50px 3.75% 50px 0;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	3.	Top Navigation
+/* -------------------------------------------------------------------------------- */
+
+
+.top-nav { background: #26272B; }
+
+
+/* Header Top Menu ------------------------------------ */
+
+
+.header-top-menu {
+	float: right;
+}
+
+.header-top-menu > li { float: right; }
+
+.header-top-menu > li.menu-item-has-children > a,
+.header-top-menu > li.page_item_has_children > a {
+	padding-right: 15px;
+	padding-left: 30px;
+}
+
+.header-top-menu > li.menu-item-has-children > a:after,
+.header-top-menu > li.page_item_has_children > a:after {
+	left: 15px;
+	right: inherit;
+}
+
+.header-top-menu ul .menu-item-has-children::after,
+.header-top-menu ul .page_item_has_children::after {
+    border-left-color: transparent;
+    border-right-color: rgba(255,255,255,0.4);
+}
+
+.header-top-menu ul .menu-item-has-children:hover::after,
+.header-top-menu ul .page_item_has_children:hover::after {
+    border-left-color: transparent;
+    border-right-color: rgba(255,255,255,1);
+}
+
+/* Sub Menus --------------------------------------- */
+
+
+.header-top-menu ul {
+	right: -9999px;
+	left: inherit;
+}
+
+.header-top-menu ul .menu-item-has-children::after,
+.header-top-menu ul .page_item_has_children::after {
+	left: 6px;
+	right: inherit;
+}
+
+.header-top-menu > li:hover > ul {
+	right: 0px;
+}
+
+
+/* Deep Down --------------------------------------- */
+
+
+.header-top-menu li > ul > li:hover > ul {
+	left: 0;
+	right: 200px;
+	margin-left: inherit;
+	margin-right: 0;
+}
+
+
+/* Social Menu --------------------------------------- */
+
+
+.social-menu {
+	float: left;
+	padding: 10px 0;
+}
+
+.social-menu li {
+	float: left;
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+.social-menu li:first-child {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.screen-reader-text {
+	right: -9999em;
+	left: auto;
+}
+
+.social-menu .active:after {
+	left: 10px;
+	right: 0;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	4.	Search Container
+/* -------------------------------------------------------------------------------- */
+
+
+.search-container .search-field {
+	padding: 35px 0 35px 92px;
+	margin-left: 50px;
+}
+
+.search-container .search-button {
+	left: 0;
+	right: 0;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	5.	Header
+/* -------------------------------------------------------------------------------- */
+
+
+/* Header ----------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	6.	Navigation
+/* -------------------------------------------------------------------------------- */
+
+
+.header-bottom-menu > li {
+	float: right;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.header-bottom-menu > li:last-child:after {
+	right: -2px;
+	left: 0;
+}
+
+.header-bottom-menu > li.menu-item-has-children > a,
+.header-bottom-menu > li.page_item_has_children > a {
+	padding-left: 34px;
+	padding-right: 20px;
+}
+
+.header-bottom-menu > li.menu-item-has-children:before,
+.header-bottom-menu > li.menu-item-has-children:after,
+.header-bottom-menu > li.page_item_has_children:before,
+.header-bottom-menu > li.page_item_has_children:after {
+	left: 20px;
+	right: inherit;
+}
+
+.header-bottom-menu > li.menu-item-has-children:before {
+	border-top-color: rgba(0,0,0,0.25);
+	margin-top: -2px;
+}
+
+
+/* Sub Menus --------------------------------------- */
+
+
+.header-bottom-menu ul {
+	left: inherit;
+	right: -9999px;
+}
+
+.header-bottom-menu > li > ul:before {
+	left: auto;
+	right: 50%;
+	margin-left: 0;
+	margin-right: -7px;
+}
+
+.header-bottom-menu > li > ul ul:before {
+    left: auto;
+    right: -14px;
+    border-left-color: rgba(255,255,255,0.2);
+    border-right-color: transparent;
+}
+
+.header-bottom-menu ul .menu-item-has-children::after,
+.header-bottom-menu ul .page_item_has_children::after {
+	border-right-color: rgba(255,255,255,0.4);
+	border-left-color: transparent;
+	left: 10px;
+	right: inherit;
+}
+
+.header-bottom-menu ul .menu-item-has-children:hover::after,
+.header-bottom-menu ul .page_item_has_children:hover::after {
+	border-right-color: transparent;
+	border-left-color: transparent;
+	left: -10px;
+	right: inherit;
+}
+
+.header-bottom-menu > li:hover > ul {
+	left: inherit;
+	right: 50%;
+	margin-right: -110px;
+	margin-left: 0;
+}
+
+
+/* Deep Down --------------------------------------- */
+
+
+.header-bottom-menu ul ul .menu-item-has-children:hover::after,
+.header-bottom-menu ul ul .page_item_has_children:hover::after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+.header-bottom-menu ul ul ul .menu-item-has-children:hover::after,
+.header-bottom-menu ul ul ul .page_item_has_children:hover::after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+.header-bottom-menu ul ul ul ul .menu-item-has-children:hover::after,
+.header-bottom-menu ul ul ul ul .page_item_has_children:hover::after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+.header-bottom-menu ul ul ul ul ul .menu-item-has-children:hover::after,
+.header-bottom-menu ul ul ul ul ul .page_item_has_children:hover::after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+.header-bottom-menu li > ul > li:hover > ul {
+	left: 0;
+	right: 220px;
+	margin-right: 0;
+	width: inherit;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	7.	Content
+/* -------------------------------------------------------------------------------- */
+
+
+.posts .post:nth-of-type(2n) {
+	margin-right: 5%;
+	margin-left: 0;
+}
+
+
+/* Post Image ----------------------------------------- */
+
+
+/* Post Header ----------------------------------------- */
+
+
+/* Sticky Posts ----------------------------------------- */
+
+.sticky.post .sticky-tag,
+.single-post .post .sticky-tag {
+	left: 15px;
+	right: inherit;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	8.	Post Formats
+/* -------------------------------------------------------------------------------- */
+
+
+/* Format Gallery ------------------------------------- */
+
+
+.flex-direction-nav {
+	right: 0;
+	left: 0;
+}
+
+.flex-direction-nav .flex-prev {
+	left: 0;
+	right: 2.5%;
+}
+
+.flex-direction-nav .flex-next {
+	left: 2.5%;
+	right: 0;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	9.	Single Post
+/* -------------------------------------------------------------------------------- */
+
+
+/* Post Header ----------------------------------------- */
+
+
+.single-post .post-comments {
+	float: left;
+}
+
+.single-post .post-comments .fa {
+	margin-left: 6px;
+	margin-right: 0;
+}
+
+
+/* Post Image ----------------------------------------- */
+
+
+.single-post .post-image-caption {
+	padding: 17px 24px 17px 0;
+}
+
+.single-post .post-image-caption .fa {
+	left: 0;
+	right: 0;
+}
+
+
+/* Post Content ------------------------------------------ */
+
+
+.single-post .post-inner {
+	padding-right: 200px;
+	padding-left: inherit;
+	position: relative;
+	z-index: 5;
+}
+
+
+/* Post Links -------------------------------------------- */
+
+
+.page-links a:first-child,
+.page-links span:first-child {
+	margin-right: 0;
+}
+
+
+/* Post Tags --------------------------------------------- */
+
+
+.post-tags a,
+.tagcloud a,
+.widget_tag_cloud a[style] {
+	padding: 5px 3px 6px 6px !important;
+	margin: 0 11px 8px 3px !important;
+}
+
+.post-tags a { margin-left: 8px; }
+
+.footer .tagcloud a:before {
+	border-right-color: transparent;
+	border-left-color: #eee;
+}
+
+.post-tags a:before,
+.tagcloud .widget-content a:before,
+.widget_tag_cloud .widget-content a:before {
+	border: 11px solid transparent;
+	border-left-color: #CCC;
+	border-right-color: transparent;
+	border-right-width: 0;
+	left: inherit;
+	right: -11px;
+}
+
+.post-tags a:hover:before,
+.tagcloud .widget-content a:hover:before,
+.widget_tag_cloud .widget-content a:hover:before {
+	border-left-color: #0093C2;
+	border-right-color: transparent;
+}
+
+
+/* Post Author ------------------------------------------- */
+
+
+.entry-author,
+.post-author {
+	padding: 30px 120px 30px 25px;
+}
+
+.entry-author:before,
+.post-author:before {
+	right: 53px;
+	left: inherit;
+}
+
+.entry-author .author-avatar,
+.post-author > .avatar {
+	left: inherit;
+	right: 20px;
+}
+
+
+/* Related Posts ----------------------------------------- */
+
+
+.related-posts {
+	float: right;
+	position: relative;
+	z-index: 10;
+}
+
+
+/* Next & Previous Posts ----------------------------------------- */
+
+
+.post-navigation {
+	float: none;
+}
+
+.nav-links > div {
+  float: right;
+}
+
+.post-navigation .nav-previous .meta-nav:before {
+	content: "\00a0\2192";
+}
+
+.post-navigation .nav-next .meta-nav:after {
+	content: "\2190\00a0";
+}
+
+.nav-links .nav-next {
+  text-align: left;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	10.	Post Content
+/* -------------------------------------------------------------------------------- */
+
+
+.post-content blockquote {
+	padding: 30px 90px 30px 30px;
+}
+
+.post-content blockquote:after {
+	right: 0px;
+}
+
+.post-content ul,
+.post-content ol {
+	margin-right: 1.5em;
+	margin-left: 0;
+}
+
+
+/* Post Media --------------------------------------- */
+
+
+.post-content .alignleft {
+	float: right;
+	margin-left: 30px;
+	margin-right: 0;
+}
+
+.post-content .alignright {
+	float: left;
+	margin-right: 30px;
+	margin-left: 0;
+}
+
+.post-content .aligncenter,
+.post-content .aligncenter img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Tables --------------------------------------- */
+
+
+/* Forms --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	11.	Comments
+/* -------------------------------------------------------------------------------- */
+
+
+.comments-title {
+	float: right;
+}
+
+.comments-title-link {
+	float: left;
+}
+
+
+/* No Comments ----------------------------------------- */
+
+
+.no-comments {
+	margin: 50px 200px 0 0;
+}
+
+.no-comments .fa {
+	margin-left: 4px;
+	margin-right: 0;
+}
+
+
+/* Comment List ---------------------------------------- */
+
+
+.comments {
+	margin-left: 0;
+	margin-right: 120px;
+}
+
+.commentlist .children {
+	margin-left: 0;
+	margin-right: 25px;
+}
+
+.comment .avatar {
+	right: 0;
+}
+
+.comment-inner {
+	margin-right: 80px;
+}
+
+.comment-inner:before,
+.comment-inner:after {
+	border-right-color: transparent;
+	border-left-color: #f1f1f1;
+	left: inherit;
+	right: -20px;
+}
+
+.comment-inner:before {
+	border-left-color: #d7d7d7;
+	border-right-color: transparent;
+	right: -22px;
+	left: inherit;
+}
+
+.bypostauthor .comment-author-icon {
+	left: 0;
+	right: -4px;
+}
+
+
+/* Comment Content ---------------------------------------- */
+
+
+.comment-meta .fleft * {
+	display: inline-block;
+}
+
+.comment-meta .fa {
+	margin: 0 10px 0 4px;
+}
+
+.comment-meta .fa:first-child {
+	margin-left: inherit;
+	margin-right: 0;
+}
+
+.comment-meta .fa-wrench {
+	margin-right: 12px;
+	margin-left: inherit;
+}
+
+
+/* Pingbacks & Tracksbacks ----------------------------------- */
+
+
+.pingbacks {
+	margin-left: 0;
+	margin-right: 90px;
+}
+
+.pingbacklist li:before {
+	margin-left: 8px;
+	margin-right: 0;
+}
+
+
+/* Comment Navigation ---------------------------------------- */
+
+
+.comments-nav .fleft a:before {
+	content: ">";
+}
+
+.comments-nav .fright a:after {
+	content: ">";
+}
+
+.comments-nav .fleft a:before {
+	content: "\00a0\2192";
+}
+
+.comments-nav .fright a:after {
+	content: "\2190\00a0";
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	12. Respond
+/* -------------------------------------------------------------------------------- */
+
+
+.comment-respond form {
+	margin-left: 0;
+	margin-right: 200px;
+}
+
+.comment-respond form label span {
+	margin-left: 0;
+	margin-right: 2px;
+}
+
+.comment-form-author,
+.comment-form-email {
+	display: block;
+	width: 47.5%;
+	float: right;
+}
+
+.comment-form-email {
+	float: right;
+}
+
+
+/* In Comment List --------------------------------------- */
+
+
+.commentlist #cancel-comment-reply-link {
+	margin-left: 0;
+	margin-right: 3px;
+}
+
+.commentlist .comment-respond form {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	13.	Page & Page Templates
+/* -------------------------------------------------------------------------------- */
+
+
+.page-edit-link .fa {
+	margin-left: 4px;
+	margin-right: 0;
+}
+
+
+/* Search Page --------------------------------------- */
+
+
+.wrapper .search-field {
+	padding: 20px 60px 20px 20px;
+}
+
+.wrapper .search-button {
+	border-left: 1px solid transparent;
+	border-right: 1px solid #ddd;
+	left: 0;
+}
+
+
+/* Error 404 --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	14.	Pagination
+/* -------------------------------------------------------------------------------- */
+
+
+/* Page Title --------------------------------------- */
+
+
+.page-title h4 {
+	float: right;
+}
+
+.page-title p {
+	float: left;
+}
+
+
+/* Archive Navigation --------------------------------------- */
+
+
+.archive-nav-newer {
+	left: inherit;
+	right: 0;
+}
+.archive-nav-older {
+	left: 0;
+	right: inherit;
+}
+
+.archive-nav-older a:after {
+	content: "\2190\00a0";
+}
+
+.archive-nav-newer a:before {
+	content: "\00a0\2192";
+}
+
+.archive-nav li + li {
+	margin-left: inherit;
+	margin-right: 10px;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	15.	Sidebar
+/* -------------------------------------------------------------------------------- */
+
+
+/* Widget Content --------------------------------------- */
+
+
+.widget-content ul ul {
+	margin-left: 0;
+	margin-right: 1em;
+}
+
+
+/* Text Widget --------------------------------------- */
+
+
+.textwidget { line-height: 150%; }
+
+
+/* Widget Icons --------------------------------------- */
+
+
+.widget_archive li:before,
+.widget_categories li:before,
+.widget_meta li:before,
+.widget_nav_menu li:before {
+	margin-left: 8px;
+	margin-right: 0;
+}
+
+
+/* RSS Widget --------------------------------------- */
+
+
+.widget_rss .widget-title img {
+	margin-left: 2px;
+	margin-right: 0;
+}
+
+
+/* Widget Calendar --------------------------------------- */
+
+
+#wp-calendar th,
+#wp-calendar td {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+#wp-calendar th:first-child,
+#wp-calendar tbody td:first-child {
+	border-left: 0 solid transparent;
+	border-right: 1px solid #ddd;
+}
+
+#wp-calendar tfoot #prev a { text-align: right; }
+#wp-calendar tfoot #next a { text-align: right; }
+
+
+/* Rowling Widget List --------------------------------------- */
+
+
+.rowling-widget-list .post-icon {
+	left: inherit;
+	right: 0;
+}
+
+.rowling-widget-list .inner {
+	padding-right: 65px;
+	padding-left: 0;
+}
+
+
+/* Flickr Widget --------------------------------------- */
+
+
+.flickr_badge_image {
+	margin: 0 0 10px 10px;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	16.	Credits
+/* -------------------------------------------------------------------------------- */
+
+
+.to-the-top {
+	left: 0;
+	right: inherit;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	17.	Media Queries
+/* -------------------------------------------------------------------------------- */
+
+
+@media ( max-width: 850px ) {
+
+
+	/* Structure --------------------------------------- */
+
+	.content {
+		float: none;
+		max-width: 88%;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Top Nav --------------------------------------- */
+
+
+	/* Search Container ----------------------------- */
+
+	.search-container .search-field {
+		padding: 30px 0 30px 64px;
+	}
+
+	/* Header --------------------------------------- */
+
+	.site-title,
+	.site-description {
+		margin-left: 60px;
+		margin-right: 0;
+	}
+
+	/* Navigation ----------------------------------- */
+
+	.nav-toggle {
+		right: inherit;
+		left: 0;
+	}
+
+	.nav-toggle .bar {
+		right: 50%;
+		left: inherit;
+		margin-right: -10px;
+		margin-left: inherit;
+	}
+
+	/* Mobile Menu */
+
+	.mobile-menu ul a {
+		padding-left: 0;
+		padding-right: 12%;
+	}
+	.mobile-menu ul ul a {
+		padding-left: 0;
+		padding-right: 18%;
+	}
+	.mobile-menu ul ul ul a {
+		padding-left: 0;
+		padding-right: 24%;
+	}
+	.mobile-menu ul ul ul ul a {
+		padding-left: 0;
+		padding-right: 30%;
+	}
+	.mobile-menu ul ul ul ul ul a {
+		padding-left: 0;
+		padding-right: 36%;
+	}
+	.mobile-menu ul ul ul ul ul ul a {
+		padding-left: 0;
+		padding-right: 42%;
+	}
+
+
+	/* Sidebar ----------------------------------- */
+
+
+	.sidebar {
+		width: 100%;
+		padding-left: 6%;
+		padding-right: 6%;
+
+	}
+
+	.sidebar .widget:nth-child(2n) {
+		margin-right: 5%;
+		margin-left: inherit;
+	}
+
+
+	/* Credits ----------------------------------- */
+
+
+}
+
+
+@media ( max-width: 780px ) {
+
+
+	/* Single Post ------------------------------- */
+
+
+	.single-post .post-inner {
+		padding-left: inherit;
+		padding-right: 0;
+	}
+
+	.related-posts {
+		left: inherit;
+		right: auto;
+	}
+
+	.related-post {
+		width: 30%;
+		float: left;
+	}
+
+	.related-post + .related-post { margin: 0 5% 0 0; }
+
+
+	/* Post Content ------------------------------ */
+
+
+
+	/* Comments ---------------------------------- */
+
+
+	.comments,
+	.comment-respond form,
+	.no-comments {
+		margin-right: 0;
+		margin-left: inherit;
+	}
+
+
+}
+
+
+@media ( max-width: 600px ) {
+
+
+	/* Structure ------------------------------------ */
+
+
+	/* Search Container ----------------------------- */
+
+
+	.search-container .search-field {
+		padding: 25px 0 25px 50px;
+	}
+
+
+	/* Navigation ----------------------------------- */
+
+
+	.mobile-menu ul a {
+		padding-left: inherit;
+		padding-right: 10%;
+	}
+	.mobile-menu ul ul a {
+		padding-left: inherit;
+		padding-right: 15%;
+	}
+	.mobile-menu ul ul ul a {
+		padding-left: inherit;
+		padding-right: 20%;
+	}
+	.mobile-menu ul ul ul ul a {
+		padding-left: inherit;
+		padding-right: 25%;
+	}
+	.mobile-menu ul ul ul ul ul a {
+		padding-left: inherit;
+		padding-right: 30%;
+	}
+	.mobile-menu ul ul ul ul ul ul a {
+		padding-left: inherit;
+		padding-right: 35%;
+	}
+
+
+	/* Content -------------------------------------- */
+
+
+	/* Single Post ---------------------------------- */
+
+
+	.post-author {
+		padding: 20px 100px 20px 20px;
+	}
+
+	.post-author:before {
+		left: inherit;
+		right: 44px;
+	}
+
+
+	/* Post Content --------------------------------- */
+
+
+	/* Comments ------------------------------------- */
+
+
+	.comment-inner {
+		margin-left: inherit;
+		margin-right: 0;
+	}
+
+	.bypostauthor .comment-author-icon {
+		left: 0;
+		right: -9px;
+	}
+
+
+	/* Pagination ----------------------------------- */
+
+
+	.archive-nav .archive-nav-newer {
+		float: right;
+	}
+
+	.archive-nav .archive-nav-older {
+		float: right;
+	}
+
+
+	/* Sidebar -------------------------------------- */
+
+
+	.sidebar .widget:nth-child(2n) {
+		margin-left: inherit;
+		margin-right: 0;
+	}
+
+
+}
+
+
+@media ( max-width: 500px ) {
+
+
+	/* Respond -------------------------------------- */
+
+
+	/* Post Content --------------------------------- */
+
+
+}
+
+
+@media ( max-width: 400px ) {
+
+
+	/* Header ----------------------------------- */
+
+
+	/* Navigation ---------------------------------- */
+
+
+	/* Content ------------------------------------- */
+
+
+	.posts .post:nth-child(2n) {
+		margin-left: inherit;
+		margin-right: 0;
+	}
+
+
+	/* Post Formats --------------------------------- */
+
+
+	/* Single Post ---------------------------------- */
+
+
+	.single-post .post-image-caption {
+		padding: 10px 24px 10px 0;
+	}
+
+	/* Post Author */
+
+
+	.post-author {
+		padding: 20px;
+	}
+
+	/* Related Posts */
+
+
+	/* Post Content ---------------------------------- */
+
+
+	/* Pagination ----------------------------------- */
+
+
+	/* Archive Navigation */
+
+
+	/* Comments ------------------------------------- */
+
+
+	/* Respond -------------------------------------- */
+
+
+	/* Credits -------------------------------------- */
+
+
+}

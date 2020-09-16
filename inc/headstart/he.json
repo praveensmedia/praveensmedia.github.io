@@ -1,0 +1,181 @@
+{
+    "settings": {
+        "options": {
+            "stylesheet": "pub/rowling"
+        },
+        "theme_mods": {
+            "0": false,
+            "nav_menu_locations": {
+                "header-bottom": "primary",
+                "social": "social-media"
+            }
+        },
+        "headstart": {
+            "mapped_id_options": [],
+            "mapped_id_theme_mods": []
+        }
+    },
+    "widgets": [
+        {
+            "id": "search-2",
+            "id_base": "search",
+            "settings": {
+                "title": "חיפוש"
+            },
+            "sidebar": "sidebar",
+            "position": 0
+        },
+        {
+            "id": "text-2",
+            "id_base": "text",
+            "settings": {
+                "title": "וידג'ט טקסט",
+                "text": "זהו וידג'ט לטקסט שמאפשר לך להוסיף טקסט או HTML לסרגל הצדי שלך. אפשר להשתמש בהם להצגת טקסט, קישורים, תמונות, HTML או שילוב של התכנים הללו. ניתן לערוך אותם במקטע 'וידג'טים' ב<a href=\"https://wordpress.com/customize/\">כלי ההתאמה האישית</a>."
+            },
+            "sidebar": "sidebar",
+            "position": 1
+        }
+    ],
+    "content": [
+        {
+            "post_title": "אודות",
+            "post_content": "זהו עמוד 'אודות' לדוגמה. להבדיל מפוסטים, עמודים מתאימים יותר ליצירת גישה קלה לתוכן שאינו תלוי בזמן, למשל 'אודות' או 'פרטים ליצירת קשר'. יש ללחוץ על הקישור 'עריכה' כדי לבצע שינויים בעמוד זה או <a href=\"https://wordpress.com/page\">להוסיף עוד עמוד</a>.",
+            "post_excerpt": "זהו תקציר עבור &nbsp;עמוד 'אודות'.",
+            "post_status": "publish",
+            "menu_order": 1,
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_type": "page",
+            "hs_custom_meta": "_hs_front_page",
+            "hs_sharing": 1,
+            "hs_like_status": 1,
+            "hs_old_id": 100
+        },
+        {
+            "post_title": "יצירת קשר",
+            "post_content": "זהו עמוד 'יצירת קשר' שכולל פרטי קשר בסיסיים וכן טופס יצירת קשר. [contact-form][contact-field label=\"שם\" type=\"name\" required=\"1\"/][contact-field label=\"אימייל\" type=\"email\" required=\"1\"/][contact-field label=\"אתר אינטרנט\" type=\"url\"/][contact-field label=\"תגובה\" type=\"textarea\" required=\"1\"/][/contact-form]",
+            "post_excerpt": "זהו תקציר עבור עמוד&nbsp;'יצירת קשר'.",
+            "post_status": "publish",
+            "menu_order": 2,
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_type": "page",
+            "hs_custom_meta": "_hs_contact_page",
+            "hs_sharing": 1,
+            "hs_like_status": 1,
+            "hs_old_id": 101
+        },
+        {
+            "post_title": "פוסט ראשון",
+            "post_content": "הפוסט הזה הוא הראשון שלך. יש ללחוץ על הקישור 'עריכה' כדי לשנות או למחוק אותו או <a href=\"https://wordpress.com/post\">להתחיל פוסט חדש</a>. אפשר לנצל את הפוסט הזה כדי להסביר לקוראים מדוע פתחת את הבלוג ומה בכוונתך לעשות אתו.",
+            "post_excerpt": "זהו התקציר של הפוסט הראשון שלך.",
+            "post_status": "publish",
+            "menu_order": 1,
+            "comment_status": "open",
+            "ping_status": "open",
+            "post_type": "post",
+            "hs_custom_meta": "_hs_first_post",
+            "hs_sharing": 1,
+            "hs_like_status": 1,
+            "attachment_url": "https://dyaddemo.files.wordpress.com/2016/06/photo-1446645681877-acde17e336a9.jpeg",
+            "hs_old_id": 102
+        },
+        {
+            "post_title": "כותרת הפוסט",
+            "post_content": "זהו פוסט מציין מיקום נוסף. יש ללחוץ על הקישור 'עריכה' כדי לשנות או למחוק אותו או <a href=\"https://wordpress.com/post\">להתחיל פוסט חדש</a>.",
+            "post_excerpt": "זהו התקציר של פוסט מציין מיקום.",
+            "post_status": "publish",
+            "comment_status": "open",
+            "ping_status": "open",
+            "post_type": "post",
+            "hs_custom_meta": "_hs_generic_post",
+            "hs_sharing": 1,
+            "hs_like_status": 1,
+            "attachment_url": "https://dyaddemo.files.wordpress.com/2016/06/photo-1445451983996-ac6b92ffb1fb.jpeg",
+            "hs_old_id": 1001
+        },
+        {
+            "post_title": "כותרת הפוסט",
+            "post_content": "זהו פוסט מציין מיקום נוסף. יש ללחוץ על הקישור 'עריכה' כדי לשנות או למחוק אותו או <a href=\"https://wordpress.com/post\">להתחיל פוסט חדש</a>.",
+            "post_excerpt": "זהו התקציר של פוסט מציין מיקום.",
+            "post_status": "publish",
+            "comment_status": "open",
+            "ping_status": "open",
+            "post_type": "post",
+            "hs_custom_meta": "_hs_generic_post",
+            "hs_sharing": 1,
+            "hs_like_status": 1,
+            "attachment_url": "https://dyaddemo.files.wordpress.com/2016/06/photo-1416453072034-c8dbfa2856b5.jpeg",
+            "hs_old_id": 1002
+        },
+        {
+            "post_title": "כותרת הפוסט",
+            "post_content": "זהו פוסט מציין מיקום נוסף. יש ללחוץ על הקישור 'עריכה' כדי לשנות או למחוק אותו או <a href=\"https://wordpress.com/post\">להתחיל פוסט חדש</a>.",
+            "post_excerpt": "זהו התקציר של פוסט מציין מיקום.",
+            "post_status": "publish",
+            "comment_status": "open",
+            "ping_status": "open",
+            "post_type": "post",
+            "hs_custom_meta": "_hs_generic_post",
+            "hs_sharing": 1,
+            "hs_like_status": 1,
+            "attachment_url": "https://dyaddemo.files.wordpress.com/2016/06/photo-1414235077428-338989a2e8c0.jpeg",
+            "hs_old_id": 1003
+        }
+    ],
+    "menus": {
+        "social-media": {
+            "name": "רשתות חברתיות",
+            "items": [
+                {
+                    "menu-item-title": "פייסבוק",
+                    "menu-item-db-id": 175,
+                    "menu-item-object-id": "175",
+                    "menu-item-object": "custom",
+                    "menu-item-type": "custom",
+                    "menu-item-status": "publish",
+                    "menu-item-position": 0,
+                    "menu-item-parent-id": "0",
+                    "menu-item-description": "",
+                    "menu-item-url": "http://www.facebook.com"
+                },
+                {
+                    "menu-item-title": "LinkedIn",
+                    "menu-item-db-id": 176,
+                    "menu-item-object-id": "176",
+                    "menu-item-object": "custom",
+                    "menu-item-type": "custom",
+                    "menu-item-status": "publish",
+                    "menu-item-position": 1,
+                    "menu-item-parent-id": "0",
+                    "menu-item-description": "",
+                    "menu-item-url": "http://www.linkedin.com"
+                },
+                {
+                    "menu-item-title": "טוויטר",
+                    "menu-item-db-id": 177,
+                    "menu-item-object-id": "177",
+                    "menu-item-object": "custom",
+                    "menu-item-type": "custom",
+                    "menu-item-status": "publish",
+                    "menu-item-position": 2,
+                    "menu-item-parent-id": "0",
+                    "menu-item-description": "",
+                    "menu-item-url": "http://www.twitter.com"
+                },
+                {
+                    "menu-item-title": "Instagram",
+                    "menu-item-db-id": 178,
+                    "menu-item-object-id": "178",
+                    "menu-item-object": "custom",
+                    "menu-item-type": "custom",
+                    "menu-item-status": "publish",
+                    "menu-item-position": 3,
+                    "menu-item-parent-id": "0",
+                    "menu-item-description": "",
+                    "menu-item-url": "http://www.instagram.com"
+                }
+            ]
+        }
+    }
+}

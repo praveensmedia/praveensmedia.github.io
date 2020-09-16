@@ -1,0 +1,220 @@
+# Translation of WordPress.com - Themes - Rowling in Spanish (Spain)
+# This file is distributed under the same license as the WordPress.com - Themes - Rowling package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-03-23 08:35:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: WordPress.com - Themes - Rowling\n"
+
+#: inc/wpcom-colors.php:375
+msgid "Eggplant"
+msgstr "Berenjena"
+
+#: inc/wpcom-colors.php:367
+msgid "Blues"
+msgstr "Azules"
+
+#: inc/wpcom-colors.php:359
+msgid "Mint Green & Charcoal Grey"
+msgstr "Verde menta y gris grafito"
+
+#: inc/wpcom-colors.php:351
+msgid "Orange & Dusk Grey"
+msgstr "Naranja y gris marengo"
+
+#: inc/wpcom-colors.php:343
+msgid "Tan & Bordeaux Red"
+msgstr "Tostado y rojo burdeos"
+
+#: inc/wpcom-colors.php:335
+msgid "Pastel Teal & Bright Red"
+msgstr "Turquesa pastel y rojo vivo"
+
+#: inc/wpcom-colors.php:299 inc/wpcom-colors.php:324
+msgid "Button Text color"
+msgstr "Color del texto del botón"
+
+#: inc/wpcom-colors.php:223
+msgid "Header Text color"
+msgstr "Color del texto del encabezado"
+
+#: inc/wpcom-colors.php:175
+msgid "Highlight & Link color"
+msgstr "Color de resalte y del enlace"
+
+#: inc/wpcom-colors.php:55
+msgid "Header Background color"
+msgstr "Color de fondo de la cabecera"
+
+#: inc/wpcom-colors.php:15
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: template-parts/content-gallery.php:16 template-parts/content.php:16
+msgid "Featured"
+msgstr "Destacado"
+
+#: template-parts/content-single.php:103
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: template-parts/content-single.php:63
+msgid "Comment"
+msgstr "Comentario"
+
+#: template-parts/content-single.php:62 template-parts/content-single.php:64
+msgid "Comments"
+msgstr "Comentarios"
+
+#: template-parts/content-page.php:43 template-parts/content-single.php:70
+msgid "Edit"
+msgstr "Editar"
+
+#: template-parts/content-gallery.php:54 template-parts/content.php:52
+msgid "% Comments"
+msgstr "% comentarios"
+
+#: template-parts/content-gallery.php:53 template-parts/content.php:51
+msgid "1 Comment"
+msgstr "1 Comentario"
+
+#: template-parts/content-gallery.php:52 template-parts/content.php:50
+msgid "0 Comments"
+msgstr "0 Comentarios"
+
+#: single.php:29
+msgid "Previous post:"
+msgstr "Entrada anterior:"
+
+#: single.php:28
+msgid "Previous"
+msgstr "Anterior"
+
+#: single.php:26
+msgid "Next post:"
+msgstr "Entrada siguiente:"
+
+#: single.php:25
+msgid "Next"
+msgstr "Siguiente"
+
+#: searchform.php:14
+msgid "Search"
+msgstr "Buscar"
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search"
+msgstr "Buscar"
+
+#: searchform.php:11 searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Buscar:"
+
+#: search.php:60 single.php:39
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que no podemos encontrar lo que estás buscando. Tal vez la búsqueda te pueda ayudar."
+
+#: search.php:22 search.php:50
+msgid "Search Results for: %s"
+msgstr "Resultados de búsqueda por: %s"
+
+#: index.php:24
+msgid "Archive"
+msgstr "archivo"
+
+#: inc/extras.php:10
+msgid "Read More"
+msgstr "Leer Más"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#: functions.php:145
+msgid "Widgets in this area will be shown in the sidebar."
+msgstr "Los Widgets de esta área serán mostrados en la barra lateral."
+
+#: functions.php:143
+msgid "Sidebar"
+msgstr ""
+"Barra lateral\n"
+"  "
+
+#. Translators: If there are characters in your language that are not
+#. * supported by Open Sans, translate this to 'off'. Do not translate
+#. * into your own language.
+#: functions.php:80
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr "activado"
+
+#. Translators: If there are characters in your language that are not
+#. * supported by Lora, translate this to 'off'. Do not translate
+#. * into your own language.
+#: functions.php:74
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:35
+msgid "Social Menu"
+msgstr "Menú social"
+
+#: footer.php:14
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s por %2$s."
+
+#: footer.php:14
+msgid "Proudly powered by %s"
+msgstr "Orgullosamente ofrecido por %s"
+
+#: footer.php:14
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Una plataforma de publicación personal semántica"
+
+#: footer.php:12
+msgid "To the top"
+msgstr "A la parte superior"
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: comments.php:47
+msgid "Add Comment"
+msgstr "Añadir comentario"
+
+#: comments.php:38
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un comentario sobre &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentarios sobre &ldquo;%2$s&rdquo;"
+
+#. translators: %1$s: smiley
+#: 404.php:57
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Trata de buscar en los archivos mensuales. %1$s"
+
+#: 404.php:39
+msgid "Most Used Categories"
+msgstr "Categorías más usadas"
+
+#: 404.php:30
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Parece que no se encontró nada en esta ubicación. ¿Quizás pruebes con uno de los enlaces de abajo o una búsqueda?"
+
+#: 404.php:22
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "¡Vaya! No se pudo encontrar esa página."
+
+#: 404.php:18
+msgid "Error 404"
+msgstr "Error 404"

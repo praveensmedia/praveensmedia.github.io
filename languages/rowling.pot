@@ -1,0 +1,280 @@
+# Copyright (C) 2017 Anders Norén
+# This file is distributed under the GNU General Public License version 2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rowling 1.09-wpcom\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/rowling\n"
+"POT-Creation-Date: 2017-03-23 08:35:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:18
+msgid "Error 404"
+msgstr ""
+
+#: 404.php:22
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:30
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:39
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:57
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:38
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:47
+msgid "Add Comment"
+msgstr ""
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:12
+msgid "To the top"
+msgstr ""
+
+#: footer.php:14
+msgid "A Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:14
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:14
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:33
+msgid "Top Header Menu (above branding)"
+msgstr ""
+
+#: functions.php:34
+msgid "Bottom Header Menu (below branding)"
+msgstr ""
+
+#: functions.php:35
+msgid "Social Menu"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not
+#. 	* supported by Lora, translate this to 'off'. Do not translate
+#. 	* into your own language.
+#: functions.php:74
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not
+#. 	* supported by Open Sans, translate this to 'off'. Do not translate
+#. 	* into your own language.
+#: functions.php:80
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:143
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:145
+msgid "Widgets in this area will be shown in the sidebar."
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: inc/extras.php:10
+msgid "Read More"
+msgstr ""
+
+#: inc/template-tags.php:25
+msgid "%1$s Posts"
+msgstr ""
+
+#: inc/template-tags.php:34
+msgid "%1$s Post"
+msgstr ""
+
+#: inc/wpcom-colors.php:15
+msgid "Background color"
+msgstr ""
+
+#: inc/wpcom-colors.php:55
+msgid "Header Background color"
+msgstr ""
+
+#: inc/wpcom-colors.php:175
+msgid "Highlight & Link color"
+msgstr ""
+
+#: inc/wpcom-colors.php:223
+msgid "Header Text color"
+msgstr ""
+
+#: inc/wpcom-colors.php:299 inc/wpcom-colors.php:324
+msgid "Button Text color"
+msgstr ""
+
+#: inc/wpcom-colors.php:335
+msgid "Pastel Teal & Bright Red"
+msgstr ""
+
+#: inc/wpcom-colors.php:343
+msgid "Tan & Bordeaux Red"
+msgstr ""
+
+#: inc/wpcom-colors.php:351
+msgid "Orange & Dusk Grey"
+msgstr ""
+
+#: inc/wpcom-colors.php:359
+msgid "Mint Green & Charcoal Grey"
+msgstr ""
+
+#: inc/wpcom-colors.php:367
+msgid "Blues"
+msgstr ""
+
+#: inc/wpcom-colors.php:375
+msgid "Eggplant"
+msgstr ""
+
+#: index.php:24
+msgid "Archive"
+msgstr ""
+
+#: search.php:22 search.php:50
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:60 single.php:39
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: searchform.php:11 searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search"
+msgstr ""
+
+#: searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: single.php:25
+msgid "Next"
+msgstr ""
+
+#: single.php:26
+msgid "Next post:"
+msgstr ""
+
+#: single.php:28
+msgid "Previous"
+msgstr ""
+
+#: single.php:29
+msgid "Previous post:"
+msgstr ""
+
+#: template-parts/content-gallery.php:15 template-parts/content.php:15
+msgid "Sticky post:"
+msgstr ""
+
+#: template-parts/content-gallery.php:16 template-parts/content.php:16
+msgid "Featured"
+msgstr ""
+
+#: template-parts/content-gallery.php:52 template-parts/content.php:50
+msgid "0 Comments"
+msgstr ""
+
+#: template-parts/content-gallery.php:53 template-parts/content.php:51
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/content-gallery.php:54 template-parts/content.php:52
+msgid "% Comments"
+msgstr ""
+
+#: template-parts/content-page.php:43 template-parts/content-single.php:70
+msgid "Edit"
+msgstr ""
+
+#: template-parts/content-single.php:47
+msgid "Date: %1$s"
+msgstr ""
+
+#: template-parts/content-single.php:53
+msgid "Author: %1$s"
+msgstr ""
+
+#: template-parts/content-single.php:62 template-parts/content-single.php:64
+msgid "Comments"
+msgstr ""
+
+#: template-parts/content-single.php:63
+msgid "Comment"
+msgstr ""
+
+#: template-parts/content-single.php:103
+msgid "Pages:"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/rowling/style.css
+msgid "Rowling"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/rowling/style.css
+msgid "http://rowlingdemo.wordpress.com"
+msgstr ""
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/rowling/style.css
+msgid ""
+"Rowling is a clean, simple and elegant magazine theme for WordPress. It "
+"features a responsive design, great typography, three menu locations "
+"including a social menu support, custom color support, custom logo support, "
+"and a gallery post format support."
+msgstr ""
+
+#. Author of the plugin/theme
+#: wp-content/themes/pub/rowling/style.css
+msgid "Anders Norén"
+msgstr ""
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/rowling/style.css
+msgid "http://www.andersnoren.se"
+msgstr ""
